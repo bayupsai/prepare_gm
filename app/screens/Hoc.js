@@ -6,6 +6,7 @@ import { GET_NEWS } from '../redux/actions/getNews'
 
 import List from './components/Hoc/List'
 import WithLoading from './components/Hoc/Loading'
+import Shimmer from './components/Hoc/Shimmer'
 
 class Hoc extends PureComponent {
     constructor(props) {
@@ -29,7 +30,7 @@ class Hoc extends PureComponent {
     render() {
         return(
             <View>
-                <ListWithLoading isLoading={this.state.Loading} repos={this.props.news.data.articles} />
+                <ListWithLoading isLoading={this.state.loading} repos={this.props.news.data.articles} />
             </View>
         )
     }
