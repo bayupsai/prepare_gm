@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, FlatList } from 'react-native'
 
 const List = props=> {
     const { repos } = props
@@ -14,7 +14,7 @@ const List = props=> {
             {
                 repos.map(repo=> {
                     return(
-                        <Text key={repo.id}>{repo.name}</Text>
+                        <Text key={repo.id}>{repo.title}</Text>
                     )
                 })
             }

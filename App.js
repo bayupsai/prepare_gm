@@ -28,7 +28,7 @@ const App = createStackNavigator(
     Hoc: {
       screen: Hoc,
       navigationOptions: {
-        header: null
+        title: 'Hoc Experiments'
       }
     }
   },

@@ -6,6 +6,7 @@ function WithLoading(Component) {
         if(!isLoading) return (
             <Component {...props} />
         )
+        
         return (
             <ActivityIndicator />
         )
