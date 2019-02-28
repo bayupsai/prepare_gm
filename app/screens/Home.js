@@ -8,6 +8,8 @@ export default class Home extends Component {
                 <Button onPress={()=> this.props.navigation.navigate('Placeholder')} title="PlaceHolder" />
                 <View style={styles.br} />
                 <Button onPress={()=> this.props.navigation.navigate('Example')} title="Experiment PlaceHolder" />
+                <View style={styles.br} />
+                <Button onPress={()=> this.props.navigation.navigate('Hoc')} title="Hoc Experiments" />
             </View>
         )
     }

@@ -3,6 +3,7 @@ import { createStackNavigator, createAppContainer } from 'react-navigation'
 import Home from './app/screens/Home'
 import Placeholder from './app/screens/Placeholder'
 import Example from './app/screens/Example'
+import Hoc from './app/screens/Hoc'
 
 const App = createStackNavigator(
   {
@@ -22,6 +23,12 @@ const App = createStackNavigator(
       screen: Example,
       navigationOptions: {
         title: 'Example HOC'
+      }
+    },
+    Hoc: {
+      screen: Hoc,
+      navigationOptions: {
+        header: null
       }
     }
   },
