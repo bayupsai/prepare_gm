@@ -1,0 +1,18 @@
+import React, { PureComponent } from 'react'
+import { View, Text } from 'react-native'
+
+class Example extends PureComponent {
+    render() {
+        return (
+            <View>
+                <Text>
+                    {
+                        this.props.showVariant ? "Continue" : "SignUp"
+                    }
+                </Text>
+            </View>
+        )
+    }
+}
+
+export default Example
